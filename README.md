@@ -2,6 +2,12 @@
 
 Projeto criado para implementar TDD seguindo solicitação de atividade da Impacta.
 
+Membros
+
+Amanda Botelho de Moraes
+Bruna Vieira Teixeira
+
+
 ## Atividade
 
 Como usuário gostaria de uma funcionalidade que valide se uma frase ou palavra é
