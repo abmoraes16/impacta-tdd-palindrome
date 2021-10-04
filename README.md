@@ -34,14 +34,14 @@ regra. Fazer o componente usando a metodologia TDD.
 
 ## Execução
 
-Subir dockerfile do projeto para rodar o .net 5.0.
-
-```
-docker build .
-```
-
-Após subir o serviço, execute os testes:
+Com ambiente que possui o .net 5.0 rodando, somente rodar os testes:
 
 ```
 dotnet test
+```
+
+Caso nâo possua, subir dockerfile do projeto para rodar os testes usando a imagem do sdk .net 5.0.
+
+```
+docker run --pull -t impacta-palindrome .
 ```
