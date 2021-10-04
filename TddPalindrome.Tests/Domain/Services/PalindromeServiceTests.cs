@@ -28,6 +28,7 @@ namespace TddPalindrome.Tests.Domain.Services
         }
 
         [Theory]
+        [InlineData("")]
         [InlineData("xyz")]
         [InlineData("elephant")]
         [InlineData("Country")]

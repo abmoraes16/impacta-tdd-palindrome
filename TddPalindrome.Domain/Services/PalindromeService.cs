@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace TddPalindrome.Domain.Services
 {
@@ -6,7 +8,16 @@ namespace TddPalindrome.Domain.Services
     {
         public bool IsValid(string text)
         {
-            throw new NotImplementedException();
+            if(string.IsNullOrEmpty(text))
+                return false;
+
+            text = Regex.Replace(text.ToLower(), @"[\.\\\/\?\!\,\' *]", "");
+            string inverted = new string(text.Reverse().ToArray());
+
+            if(text == inverted)
+                return true;
+
+            return false;
         }
     }
 }
